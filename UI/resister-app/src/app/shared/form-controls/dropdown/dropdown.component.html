@@ -1,0 +1,19 @@
+<div class="dropdown-container">
+  <div class="left">
+      <label >{{config.name}}</label>
+  </div>
+  <div class="right">
+      <select (change)="OnChange()" [(ngModel)]="selectedItem">
+          <option value="" disabled>{{config.defaultValue}}</option>
+          <option class="option" *ngFor="let item of config.items" [ngValue]="item">
+              {{item.name}}
+            <!-- <div class="item">
+              <div class="color"></div>
+              <div class="item-val"></div>
+            </div> -->
+            
+          </option>
+        </select>
+  </div>
+  
+</div>

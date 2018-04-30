@@ -1,0 +1,79 @@
+.app-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .content{
+        width: 30%;
+        margin: 0 auto;
+        .resister{
+            height: 50px;
+            width: 300px;
+            border: 2px solid #f9cdaa;
+            border-radius: 50px;
+            display: inline-flex;
+            background: #fbeadd;
+            div{
+                position: relative;
+                top: -1px;
+            }
+            .color1{
+                width: 10px;
+                height: 50px;
+                border: 1px solid #f9cdaa;
+                margin-left: 40px;
+                display: table-cell;
+            }
+            .color2{
+                width: 10px;
+                height: 50px;
+                border: 1px solid #f9cdaa;
+                margin-left: 20px;
+                display: table-cell;
+                
+            }
+            .multiplier{
+                width: 10px;
+                height: 50px;
+                border: 1px solid #f9cdaa;
+                margin-left: 20px;
+                display: table-cell;
+                
+            }
+            .tolerance{
+                width: 10px;
+                height: 50px;
+                border: 1px solid #f9cdaa;
+                margin-left: 130px;
+                display: table-cell;
+                
+            }
+        }
+        .left{
+            width:50px;
+            position: relative;
+            top: 45px;
+            right: 42px;  
+            hr{
+                padding: 7px;
+                border: 1px solid #f9cdaa; 
+                background: #f9cdaa;
+            }
+        }
+        .middle{
+            display: inline-block;
+            margin:0 auto;
+        }
+        .right{
+            width:50px;
+            float: right;
+            position: relative;
+            right: 7px;
+            top: 8px;
+            hr{
+                padding: 7px;
+                border: 1px solid #f9cdaa;
+                background: #f9cdaa;
+            }
+        }
+    }
+}

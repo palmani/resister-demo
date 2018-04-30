@@ -2,25 +2,26 @@
 <div class="app-container">
   <h1>RESISTER 4 BAND - DEMO</h1>
   <div class="content">
-    <div *ngFor="let item of resisterColorItems">
+    <div class="app-dropdown" *ngFor="let item of resisterColorItems">
       <app-dropdown [config]="item" (selectedValue)="selectedValue($event)"></app-dropdown>
     </div>
-    
+
     <div>
       <div class="left">
         <hr>
       </div>
       <div class="middle ">
         <div class="resister">
-            <div class="color1" [ngStyle]="{'background': selectedBand1Color, 'border-color': selectedBand1Color}"></div>
-            <div class="color2" [ngStyle]="{'background': selectedBand2Color, 'border-color': selectedBand2Color}"></div>
-            <div class="multiplier" [ngStyle]="{'background': selectedMultiplierColor, 'border-color': selectedMultiplierColor}"></div>
-            <div class="tolerance" [ngStyle]="{'background': selectedToleranceColor, 'border-color': selectedToleranceColor}"></div>
+          <div class="color1" [ngStyle]="{'background': selectedBand1Color, 'border-color': selectedBand1Color}"></div>
+          <div class="color2" [ngStyle]="{'background': selectedBand2Color, 'border-color': selectedBand2Color}"></div>
+          <div class="multiplier" [ngStyle]="{'background': selectedMultiplierColor, 'border-color': selectedMultiplierColor}"></div>
+          <div class="tolerance" [ngStyle]="{'background': selectedToleranceColor, 'border-color': selectedToleranceColor}"></div>
         </div>
       </div>
       <div class="right">
         <hr>
       </div>
     </div>
+    <button class="btn" [disabled]="!isSelectedAllColor" (click)="getValue()">Submit</button>
   </div>
 </div>

@@ -5,6 +5,9 @@
     .content{
         width: 30%;
         margin: 0 auto;
+        .app-dropdown{
+            margin-bottom: 10px;
+        }
         .resister{
             height: 50px;
             width: 300px;
@@ -75,5 +78,8 @@
                 background: #f9cdaa;
             }
         }
+    }
+    .btn{
+        margin-top: 20px;
     }
 }

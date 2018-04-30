@@ -7,6 +7,7 @@ import { DropdownConfig } from './shared/form-controls/dropdown';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  isSelectedAllColor: boolean;
   title = 'app';
   selectedCountries: any = {};
   resisterColorItems: Array<DropdownConfig> = [];
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit {
         name: 'Color1: ',
         id: 0,
         items: [
-          { name: 'Select Color1', id: '0' },
+          { name: 'Select Color1', id: '' },
           { name: 'Brown', id: '1' },
           { name: 'Red', id: '2' },
           { name: 'Orange', id: '3' },
@@ -39,7 +40,8 @@ export class AppComponent implements OnInit {
         name: 'Color2: ',
         id: 1,
         items: [
-          { name: 'Select Color2', id: '0' },
+          { name: 'Select Color2', id: '' },
+          { name: 'Black', id: '0' },
           { name: 'Brown', id: '1' },
           { name: 'Red', id: '2' },
           { name: 'Orange', id: '3' },
@@ -102,5 +104,14 @@ export class AppComponent implements OnInit {
     } else {
       this.selectedToleranceColor = val.id === '0' ? '' :  val.name;
     }
+
+    if (this.selectedBand1Color && this.selectedBand2Color && this.selectedMultiplierColor && this.selectedToleranceColor) {
+      this.isSelectedAllColor = true;
+    } else {
+      this.isSelectedAllColor = false;
+    }
+  }
+
+  getValue() {
   }
 }

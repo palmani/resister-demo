@@ -54,7 +54,7 @@ describe('AppComponent', () => {
     };
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    app.getValue(obj);
+    app.submit(obj);
     expect(app.resisterVal).toBeTruthy('1500');
   }));
 

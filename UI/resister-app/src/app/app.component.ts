@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   resisterVal: any;
   showResults: boolean;
   isSelectedAllColor: boolean;
-  title = 'app';
   selectedCountries: any = {};
   resisterColorItems: Array<DropdownConfig> = [];
   selectedBand1Color: any = {};
@@ -21,7 +20,7 @@ export class AppComponent implements OnInit {
   selectedColor: any = {};
   constructor(private appService: AppService) { }
   ngOnInit() {
-    this.resisterColorItems = [
+    this.resisterColorItems = [ // initilze dropdown values for all the color
       {
         name: 'Color1: ',
         id: 0,
@@ -104,7 +103,7 @@ export class AppComponent implements OnInit {
       }
     ];
   }
-  selectedValue(val: any) {
+  selectedValue(val: any) { // assign corresponding value for selected dropdown
     console.log(val);
     if (val && val.dropdownID === 0) {
       this.selectedBand1Color = val.id === '' ? '' : val;
@@ -130,13 +129,12 @@ export class AppComponent implements OnInit {
     this.showResults = false;
   }
 
-  getValue() {
-    this.appService.getOhms(this.selectedColor).subscribe(res => {
+  submit() { // submit to web api
+    this.appService.getOhms(this.selectedColor).subscribe(res => { // calculate Ohm value
       console.log(res);
       this.showResults = true;
       this.resisterVal = res;
-      // hundreds
-      if (res <= 999) {
+      if (res <= 999) { // hundreds
         this.resisterVal = res ;
       } else if (res >= 1000 && res <= 999999) { // thousands
         this.resisterVal = (res / 1000) + 'K';

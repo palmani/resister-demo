@@ -23,6 +23,6 @@
       </div>
       <div class="result" *ngIf="showResults">Resistor Value: {{resisterVal}} Ohms {{this.selectedToleranceColor.id}}</div>
     </div>
-    <button class="btn" [disabled]="!isSelectedAllColor" (click)="getValue()">Submit</button>
+    <button class="btn" [disabled]="!isSelectedAllColor" (click)="submit()">Submit</button>
   </div>
 </div>

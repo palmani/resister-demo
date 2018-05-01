@@ -25,3 +25,30 @@
 /Users/palmani/Projects/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.csproj.CoreCompileInputs.cache
 /Users/palmani/Projects/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.dll
 /Users/palmani/Projects/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.pdb
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/ResisterColorCodes.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/ResisterColorCodes.pdb
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/Microsoft.Web.Infrastructure.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/Newtonsoft.Json.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Net.Http.Formatting.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Helpers.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Http.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Http.WebHost.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Mvc.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Razor.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.Deployment.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.Razor.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Razor.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Helpers.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.Deployment.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.WebPages.Razor.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Mvc.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Net.Http.Formatting.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Http.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/System.Web.Http.WebHost.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/bin/Newtonsoft.Json.xml
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.csprojResolveAssemblyReference.cache
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.csproj.CoreCompileInputs.cache
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.dll
+/Volumes/Macintosh HD 2/Pal/Dev/Repo/Bit/resister-demo/Backend/ResisterColorCodes/ResisterColorCodes/obj/Debug/ResisterColorCodes.pdb

@@ -12,15 +12,16 @@
       </div>
       <div class="middle ">
         <div class="resister">
-          <div class="color1" [ngStyle]="{'background': selectedBand1Color, 'border-color': selectedBand1Color}"></div>
-          <div class="color2" [ngStyle]="{'background': selectedBand2Color, 'border-color': selectedBand2Color}"></div>
-          <div class="multiplier" [ngStyle]="{'background': selectedMultiplierColor, 'border-color': selectedMultiplierColor}"></div>
-          <div class="tolerance" [ngStyle]="{'background': selectedToleranceColor, 'border-color': selectedToleranceColor}"></div>
+          <div class="color1" [ngStyle]="{'background': selectedBand1Color.name, 'border-color': selectedBand1Color.name}"></div>
+          <div class="color2" [ngStyle]="{'background': selectedBand2Color.name, 'border-color': selectedBand2Color.name}"></div>
+          <div class="multiplier" [ngStyle]="{'background': selectedMultiplierColor.name, 'border-color': selectedMultiplierColor.name}"></div>
+          <div class="tolerance" [ngStyle]="{'background': selectedToleranceColor.name, 'border-color': selectedToleranceColor.name}"></div>
         </div>
       </div>
       <div class="right">
         <hr>
       </div>
+      <div *ngIf="showResults">Resistor Value: {{resisterVal}} Ohms {{this.selectedToleranceColor.id}}</div>
     </div>
     <button class="btn" [disabled]="!isSelectedAllColor" (click)="getValue()">Submit</button>
   </div>

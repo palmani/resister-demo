@@ -3,9 +3,9 @@
       <label >{{config.name}}</label>
   </div>
   <div class="right">
-      <select (change)="OnChange()" [(ngModel)]="selectedItem">
+      <select  (change)="OnChange()" [(ngModel)]="selectedItem" >
           <option class="option" *ngFor="let item of config.items" [ngValue]="item">
-              {{item.name}}
+              {{item.id}} {{item.name}}
           </option>
         </select>
   </div>

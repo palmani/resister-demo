@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
-  <h1>RESISTER 4 BAND - DEMO</h1>
+  <h2>RESISTER 4 BAND - DEMO</h2>
   <div class="content">
     <div class="app-dropdown" *ngFor="let item of resisterColorItems">
       <app-dropdown [config]="item" (selectedValue)="selectedValue($event)"></app-dropdown>
@@ -21,7 +21,7 @@
       <div class="right">
         <hr>
       </div>
-      <div *ngIf="showResults">Resistor Value: {{resisterVal}} Ohms {{this.selectedToleranceColor.id}}</div>
+      <div class="result" *ngIf="showResults">Resistor Value: {{resisterVal}} Ohms {{this.selectedToleranceColor.id}}</div>
     </div>
     <button class="btn" [disabled]="!isSelectedAllColor" (click)="getValue()">Submit</button>
   </div>

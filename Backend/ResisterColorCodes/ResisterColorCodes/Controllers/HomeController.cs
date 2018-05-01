@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -14,14 +15,11 @@ namespace ResisterColorCodes.Controllers
        
         // GET api/values
         [System.Web.Http.HttpGet]
-        public IEnumerable<string> Get(string test, string test2)
+        public decimal CalculateOhmValue(string bandAColor, string bandBColor, string bandCColor, string bandDColor)
         {
-            return new string[] { "value1", "value2" };
-        }
-        [System.Web.Http.HttpGet]
-        public int CalculateOhmValue(string bandAColor, string bandBColor, string bandCColor, string bandDColor)
-        {
-            return (Convert.ToInt32(bandAColor) * 10 + Convert.ToInt32(bandAColor)) * Convert.ToInt32(bandCColor);
+            decimal mulitplier = decimal.Parse(bandCColor, CultureInfo.InvariantCulture);
+            decimal result =  (decimal) (Convert.ToInt32(bandAColor) * 10 + Convert.ToInt32(bandBColor)) * mulitplier;
+            return result;
         }
     }
 }

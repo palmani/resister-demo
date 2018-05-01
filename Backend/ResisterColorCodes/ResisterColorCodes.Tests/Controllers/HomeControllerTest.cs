@@ -19,7 +19,6 @@ namespace ResisterColorCodes.Tests.Controllers
             var controller = new HomeController();
 
             // Act
-            var result = (ViewResult)controller.Index();
 
             var mvcName = typeof(Controller).Assembly.GetName();
             var isMono = Type.GetType("Mono.Runtime") != null;
@@ -28,8 +27,6 @@ namespace ResisterColorCodes.Tests.Controllers
             var expectedRuntime = isMono ? "Mono" : ".NET";
 
             // Assert
-            Assert.AreEqual(expectedVersion, result.ViewData["Version"]);
-            Assert.AreEqual(expectedRuntime, result.ViewData["Runtime"]);
         }
     }
 }

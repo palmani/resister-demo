@@ -8,7 +8,7 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  resisterVal: number;
+  resisterVal: any;
   showResults: boolean;
   isSelectedAllColor: boolean;
   title = 'app';
@@ -66,19 +66,19 @@ export class AppComponent implements OnInit {
         id: 2,
         items: [
           { name: 'Select Multiplier', id: '' },
-          { name: 'Black', id: 'x1', value: 1 },
-          { name: 'Brown', id: 'x10', value: 10 },
-          { name: 'Red', id: 'x100', value: 100 },
-          { name: 'Orange', id: 'x1K', value: 1000 },
-          { name: 'Yellow', id: 'x10K', value: 10000 },
-          { name: 'Green', id: 'x100K', value: 100000 },
-          { name: 'Blue', id: 'x1M', value: 1000000 },
-          { name: 'Violet', id: 'x10M', value: 10000000 },
-          { name: 'Gray', id: 'x100M', value: 100000000 },
-          { name: 'White', id: 'x1G', value: 1000000000 },
-          { name: 'Pink', id: '×0.001', value: 0.001 },
-          { name: 'Gold', id: '×0.01', value: 0.01 },
-          { name: 'Silver', id: '×0.1', value: 0.1 },
+          { name: 'Black', id: 'x1', value: '1' },
+          { name: 'Brown', id: 'x10', value: '10' },
+          { name: 'Red', id: 'x100', value: '100' },
+          { name: 'Orange', id: 'x1K', value: '1000' },
+          { name: 'Yellow', id: 'x10K', value: '10000' },
+          { name: 'Green', id: 'x100K', value: '100000' },
+          { name: 'Blue', id: 'x1M', value: '1000000' },
+          { name: 'Violet', id: 'x10M', value: '10000000' },
+          { name: 'Gray', id: 'x100M', value: '100000000' },
+          { name: 'White', id: 'x1G', value: '1000000000' },
+          { name: 'Pink', id: '×0.001', value: '0.001' },
+          { name: 'Gold', id: '×0.01', value: '0.01' },
+          { name: 'Silver', id: '×0.1', value: '0.1' },
         ],
         selectedIndex: 0,
         defaultValue: 'Choose Multiplier'
@@ -87,7 +87,7 @@ export class AppComponent implements OnInit {
         name: 'Tolerance: ',
         id: 3,
         items: [
-          { name: 'Select Tolerance', id: '0' },
+          { name: 'Select Tolerance', id: '' },
           { name: 'Brown', id: '± 1%' },
           { name: 'Red', id: '± 2%' },
           { name: 'Orange', id: '± 3%' },
@@ -135,6 +135,18 @@ export class AppComponent implements OnInit {
       console.log(res);
       this.showResults = true;
       this.resisterVal = res;
+      // hundreds
+      if (res <= 999) {
+        this.resisterVal = res ;
+      } else if (res >= 1000 && res <= 999999) { // thousands
+        this.resisterVal = (res / 1000) + 'K';
+      } else if (res >= 1000000 && res <= 999999999) { // millions
+        this.resisterVal = (res / 1000000) + 'M';
+      } else if (res >= 1000000000 && res <= 999999999999) { // billions
+        this.resisterVal = (res / 1000000000) + 'B';
+      } else {
+        this.resisterVal = res ;
+      }
     });
   }
 }
